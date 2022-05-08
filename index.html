@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="https://d3js.org/d3.v5.min.js"></script> 
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="icon.ico">
   <style>
     a:visited
     {
@@ -62,10 +62,17 @@
       text-decoration: none
     }
 
-    #cash2Span
+    #cash2Text
     {
-      text-decoration: none;
-      color: black;
+      height: 50px;
+    }
+
+    #cash2TextDiv
+    {
+      display: flex;
+      justify-content: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
     }
 
     #gettingStartedDiv
@@ -97,9 +104,7 @@
 
     #logo
     {
-      height: 35px;
-      line-height: 35px;
-      display: inline-block;
+      height: 3rem;
     }
 
     #poolChartsDiv
@@ -169,11 +174,6 @@
       font-style: italic;
     }
 
-    .large
-    {
-      font-size: 50px;
-    }
-
     .monospace
     {
       font-family: monospace;
@@ -229,9 +229,13 @@
 </head>
 <body>
   <br/>
-  <img id="logo" src="cash2Logo100x100.svg">
-  <h1 class="large serif bold"><a id="cash2A" href="https://cash2.org"><span id="cash2Span">Cash2</span></a></h1>
-  <h5 id="miningPoolH5">Cash2 Pool</h5>
+  <div>
+    <img id="logo" src="cash2Logo100x100.svg" />
+  </div>
+  <div id="cash2TextDiv">
+    <a id="cash2A" href="https://cash2.org"><img id="cash2Text" src="cash2Text.svg" /></a>
+  </div>
+  <h5 id="miningPoolH5">Mining Pool</h5>
   <br/>
   <br/>
 
